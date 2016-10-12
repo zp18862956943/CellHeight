@@ -8,11 +8,13 @@
 
 #import "DetailTableViewCell.h"
 #import "Masonry.h"
+#import "TestModel.h"
 @implementation DetailTableViewCell
 {
-    UILabel *Label1;
+    UILabel *Label;
     
-    UIView *View;
+    UILabel *Label2;
+    
     
 }
 
@@ -20,41 +22,53 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
         UILabel *label = [[UILabel alloc]init];
         label.numberOfLines = 0;
+        label.backgroundColor = [UIColor greenColor];
         label.font = [UIFont systemFontOfSize:16.0f];
         label.textColor = [UIColor grayColor];
         [self.contentView addSubview:label];
-        Label1 = label;
+        Label = label;
         
-        UIView *view = [[UIView alloc]init];
-        view.backgroundColor = [UIColor greenColor];
-        [self.contentView addSubview:view];
-        View = view;
+        UILabel *label2 = [[UILabel alloc]init];
+        label2.numberOfLines = 0;
+        label2.backgroundColor = [UIColor orangeColor];
+        label2.textAlignment = NSTextAlignmentCenter;
+        label2.font = [UIFont systemFontOfSize:20.0f];
+        label2.textColor = [UIColor redColor];
+        [self.contentView addSubview:label2];
+        Label2 = label2;
+        
+
         
         [label mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.contentView.mas_left).offset(50);
-            make.right.equalTo(self.contentView.mas_right).offset(-50);
-            make.top.equalTo(self.contentView.mas_top).offset(0);
-            make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(-50);
+            make.left.offset(50);
+            make.right.offset(-50);
+            make.top.offset(0);
+            make.bottom.mas_equalTo(label2.mas_top).offset(0);
         }];
         
-        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        [label2 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.offset(20);
             make.right.offset(-20);
             make.top.equalTo(label.mas_bottom).offset(0);
-            make.height.equalTo(@50);
+            make.bottom.offset(0);
+           
         }];
+        
+        
     }
     return self;
 }
 
 
--(void)setTitle:(NSString *)title{
-    Label1.text = title;
+-(void)setModel:(TestModel *)model
+{
+    Label.text = model.title;
+    Label2.text = model.title2;
 }
-
 
 @end

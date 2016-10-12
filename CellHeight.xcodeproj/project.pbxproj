@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		408A23021DADF1A5001CE501 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 408A23011DADF1A5001CE501 /* TestModel.m */; };
 		40D2A2FE1DAD1CBE006FFB91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2A2FD1DAD1CBE006FFB91 /* main.m */; };
 		40D2A3011DAD1CBE006FFB91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2A3001DAD1CBE006FFB91 /* AppDelegate.m */; };
 		40D2A3041DAD1CBE006FFB91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2A3031DAD1CBE006FFB91 /* ViewController.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		408A23001DADF1A5001CE501 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		408A23011DADF1A5001CE501 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		40D2A2F91DAD1CBE006FFB91 /* CellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D2A2FD1DAD1CBE006FFB91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40D2A2FF1DAD1CBE006FFB91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				40D2A3001DAD1CBE006FFB91 /* AppDelegate.m */,
 				40D2A3021DAD1CBE006FFB91 /* ViewController.h */,
 				40D2A3031DAD1CBE006FFB91 /* ViewController.m */,
+				408A23001DADF1A5001CE501 /* TestModel.h */,
+				408A23011DADF1A5001CE501 /* TestModel.m */,
 				40D2A32F1DAD1CD9006FFB91 /* DetailTableViewCell.h */,
 				40D2A3301DAD1CD9006FFB91 /* DetailTableViewCell.m */,
 				40D2A3051DAD1CBE006FFB91 /* Main.storyboard */,
@@ -389,6 +394,7 @@
 				40D2A3511DAD1DDC006FFB91 /* MASLayoutConstraint.m in Sources */,
 				40D2A3541DAD1DDC006FFB91 /* NSArray+MASAdditions.m in Sources */,
 				40D2A3531DAD1DDC006FFB91 /* MASViewConstraint.m in Sources */,
+				408A23021DADF1A5001CE501 /* TestModel.m in Sources */,
 				40D2A3521DAD1DDC006FFB91 /* MASViewAttribute.m in Sources */,
 				40D2A3641DAD1E08006FFB91 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				40D2A3561DAD1DDC006FFB91 /* View+MASAdditions.m in Sources */,
@@ -628,6 +634,7 @@
 				40D2A3281DAD1CBE006FFB91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40D2A3291DAD1CBE006FFB91 /* Build configuration list for PBXNativeTarget "CellHeightTests" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +643,7 @@
 				40D2A32B1DAD1CBE006FFB91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40D2A32C1DAD1CBE006FFB91 /* Build configuration list for PBXNativeTarget "CellHeightUITests" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +652,7 @@
 				40D2A32E1DAD1CBE006FFB91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

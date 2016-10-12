@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class TestModel;
 @interface DetailTableViewCell : UITableViewCell
-@property(copy,nonatomic)NSString *title;
+@property(strong,nonatomic)TestModel *model;
 @end
