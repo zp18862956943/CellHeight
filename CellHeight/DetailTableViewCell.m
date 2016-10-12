@@ -42,8 +42,6 @@
         [self.contentView addSubview:label2];
         Label2 = label2;
         
-
-        
         [label mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.offset(50);
             make.right.offset(-50);
